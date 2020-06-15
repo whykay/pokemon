@@ -57,18 +57,18 @@ function StartState:update(dt)
 end
 
 function StartState:render()
-    love.graphics.clear(188, 188, 188, 255)
+    love.graphics.clear(188, 188, 188, 1)
 
-    love.graphics.setColor(24, 24, 24, 255)
+    love.graphics.setColor(0, 0, 0, 1)
     love.graphics.setFont(gFonts['large'])
     love.graphics.printf('50-Mon!', 0, VIRTUAL_HEIGHT / 2 - 72, VIRTUAL_WIDTH, 'center')
     love.graphics.setFont(gFonts['medium'])
     love.graphics.printf('Press Enter', 0, VIRTUAL_HEIGHT / 2 + 68, VIRTUAL_WIDTH, 'center')
     love.graphics.setFont(gFonts['small'])
 
-    love.graphics.setColor(45, 184, 45, 124)
+    love.graphics.setColor(255, 255, 255, 1)
     love.graphics.ellipse('fill', VIRTUAL_WIDTH / 2, VIRTUAL_HEIGHT / 2 + 32, 72, 24)
 
-    love.graphics.setColor(255, 255, 255, 255)
+    love.graphics.setColor(255, 255, 255, 1)
     love.graphics.draw(gTextures[self.sprite], self.spriteX, self.spriteY)
 end
